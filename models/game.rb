@@ -2,10 +2,6 @@ class Game
 
   def self.winner(hand1, hand2)
 
-    result = {
-      "winner" => '',
-      "hand" => ''
-    }
 
     if(hand1 == "rock")
       if((hand2) == "scissors")

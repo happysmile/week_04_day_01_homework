@@ -1,7 +1,19 @@
-<h1>Play</h1>
+<h2><% if @option1 %>Player 2<%else %>Player 1<% end %> make a move!</h2>
 
-<ul>
-  <a href="<% if @option1 %><%=@option1 %>/<%else %>play/<% end %>paper">Paper</a>
-  <a href="<% if @option1 %><%=@option1 %>/<%else %>play/<% end %>rock">Rock</a>
-  <a href="<% if @option1 %><%=@option1 %>/<%else %>play/<% end %>scissors">Scissor</a>
+<ul id="game_options">
+  <li>
+    <a title="paper" href="<% if @option1 %><%=@option1 %>/<%else %>play/<% end %>paper">
+      <img src="/paper.png" alt="paper">
+    </a>
+  </li>
+  <li>
+    <a title="rock" href="<% if @option1 %><%=@option1 %>/<%else %>play/<% end %>rock">
+      <img src="/rock.png" alt="rock">
+    </a>
+  </li>
+  <li>
+    <a title="scissors" href="<% if @option1 %><%=@option1 %>/<%else %>play/<% end %>scissors">
+      <img src="/scissors.png" alt="scissors">
+    </a>
+  </li>
 </ul>
